@@ -21,3 +21,39 @@ function PrimeTime (num){
         return true
   }
   console.log(PrimeTime())
+
+  //answer from online
+
+  function isPrime(num) {
+    if (num === 0 || num === 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;          
+    }
+    return  true;
+  }
+
+
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+}
+
+console.log(test_prime(37));
