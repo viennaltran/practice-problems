@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function do_math(num1, num2, operator){
+            var add = num1+num2
+            var sub = num1-num2
+            var times = num1*num2
+            var div = num1/num2
+            var result;
+    
+        if (operator === "+"){
+            result = add;
+        }
+        else if(operator === "-"){
+            result = sub;
+        }
+        else if(operator === "*"){
+            result = times;
+        }
+        else if(operator === "/" ){
+            result = div;
+        }
+            return result
+        }
+        do_math(5,2,'*')
+        console.log(do_math(5,2,'*'))
+
+// https://github.com/Learning-Fuze/practice-problems
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
