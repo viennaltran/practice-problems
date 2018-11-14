@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-    function random_range(start_num, end_num){
-    var result;    
-    if (start_num!=="" && end_num!==""){
-        result = Math.floor(Math.random()*end_num+start_num) ;     
-        }
-        return result;  
-    }
-      random_range(2,5);
-console.log (random_range(2,5));
+    function random_range(start_num, end_num){  
+   
+   var result = Math.floor(Math.random()*end_num+start_num) ;     
+
+    return result;  
+}
+  random_range(1,100);
+console.log (random_range(1,100));
+
+
     </script>
 </head>
 <body>
