@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-    function random_range(start_num, end_num){  
-   
-   var result = Math.floor(Math.random()*end_num+start_num) ;     
-
-    return result;  
-}
-  random_range(1,100);
-console.log (random_range(1,100));
-
+    function random_range(start_num,end_num){  
+    if(start_num instanceof Array){  
+        var item = start_num[Math.floor(Math.random()*start_num.length)];
+        return item;
+    }
+    else{
+        var result = Math.floor(Math.random()*end_num+start_num) ;     
+        return result;  
+            }
+        }
+        console.log(random_range(1,100));
+        console.log (random_range(['a','b','c','d','e']))
 
     </script>
 </head>
