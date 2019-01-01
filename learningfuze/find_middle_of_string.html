@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function find_middle_letters(str){
+        var res = str.split("");
+        if(res.length%2 ===1){
+        for(i=0;i<str.length;i++){
+            var result=res.slice((Math.floor(res.length/2)),(Math.ceil(res.length/2)));
+            return result
+            }
+        }else {
+        for (i=0; i<str.length; i++){
+            var result2=res.slice((Math.floor(res.length/3)),(Math.floor(res.length/3))+2);
+            return result2
+            
+            }
+        }
+        } 
+
+ console.log(find_middle_letters('dishes'))
+    
+    </script>
+</head>
+<body>
+    
+<!-- Build a function, find_middle_letters, that finds the middle of a string. If the string is an odd number of characters, it returns 1 letter. If it is an even number of characters, it returns 2 characters. It takes a string as a parameter
+
+Example:
+find_middle_letters('seven')
+Return: 'v'
+find_middle_letters('dish')
+Return: 'is' -->
+</body>
+</html>
