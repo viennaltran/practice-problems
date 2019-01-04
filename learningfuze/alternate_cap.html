@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function cap(string){
+            let result=[];
+            for(i=0;i<string.length;i++){
+                if(i%2===0){
+                const lowerC= string[i].toLowerCase();
+                result.push(lowerC);  
+                }
+                else if(i%2===1){
+                const upperC= string[i].toUpperCase();
+                result.push(upperC);
+                }  
+            }
+            return result.join()
+            }
+            console.log(cap('amazing'));
+   
+
+    </script>
+</head>
+<body>
+        <!-- given a string, create a new string with every other letter capitalized
+        example:
+        parameters: "amazing"
+        return: "aMaZiNg"
+        human-level instructions
+        create variable to store new string
+        start a loop to proceed through the string
+        get a new letter from the string
+        store it in a variable
+        get the next letter from the string
+        store it in a variable
+        capitalize it
+        add the regular and capitalized letters to the new string
+        repeat -->
+</body>
+
