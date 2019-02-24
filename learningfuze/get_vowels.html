@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function vowels(param){
+    for(i=0; i<param.length;i++){
+    var res = param.replace(/[^aeiouy]/g, "");
+    return res
+    }    
+}
+  console.log(vowels('four score and seven years ago'))
+
+    </script>
+</head>
+<body>
+    
+</body>
+
+<!-- 
+given a string, find all the vowels in the string. Store them in a new string
+example:
+parameters: "four score and seven years ago"
+return: "ouoeaeeeaao"
+human-level instructions
+create variable to store vowels
+begin loop
+get each letter, one at a time
+compare it with each each vowel and see if it matches
+if it is, add it to the vowel variable
+repeat>
+</html>
