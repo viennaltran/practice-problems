@@ -1,0 +1,159 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  /* 
+  Cascading Order
+  Inline style (inside an HTML element)
+  External and internal style sheets (in the head section)
+  Browser default
+  */
+
+  p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+
+  p {
+    margin: 25px 50px 75px 100px;
+  }
+
+  p {
+    margin: 25px 50px 75px;
+  }
+
+  /* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+  div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+  div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+
+  div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } 
+  
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }
+
+  div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+  }
+
+  span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    background-color: yellow; 
+  }
+  
+  span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    background-color: yellow; 
+  }
+
+  /* Descendant Selector */
+  div p {
+    background-color: yellow;
+  }
+
+  div > p {
+    background-color: yellow;
+  }
+
+  div + p {
+    background-color: yellow;
+  }
+
+  div ~ p {
+    background-color: yellow;
+  }
+
+  /* CSS Specificity */
