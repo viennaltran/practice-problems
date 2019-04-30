@@ -11,28 +11,30 @@
 
 var myString = "Hello my name is Stu"
 
-function pigLatin (string){
+function translate (string){
   
   var ay = "ay"
   var newString=string.split(" ");
   var firstLetter=[];
-//    console.log(newString)
+  var pigLatin = [];
+  var concat=[];
+
    
   for(i=0; i<newString.length; i++){
   var word = newString[i].split('');
-   console.log(newString[i].split(''))
-   
-   for (j=0; j<word.length; j++){
-     if(word[j]==='a'||word[j]==='e'||word[j]==='i'||word[j]==='o'||word[j]==='u'){
-       firstLetter.push(word[j-1])
-      firstLetter = firstLetter[0]
-     }
-   }
-   
- return firstLetter;
 
+      firstLetter.push(word[0].concat(ay));
+       word.splice(0,1);
+    var combined = word.join();
+    var noComma = combined.replace(/,/g,"");
+    pigLatin.push(noComma)
     
-  }
-
+     }
+    
+   for (j=0; j<pigLatin.length; j++){
+    concat.push(pigLatin[j]+firstLetter[j]);
+                                                      
+    }
+   return concat;
 }
-console.log(pigLatin(myString))
+console.log(translate(myString))
