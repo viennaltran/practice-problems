@@ -9,32 +9,13 @@
 // Output - ['23', 'what', 'Bob', 45, 'hello']
 // Avoid using pre-built functions that do something similar
 
-var myString = "Hello my name is Stu"
+var myArray = ['hello', 45, 'Bob', 'what', '23'];
 
-function translate (string){
-  
-  var ay = "ay"
-  var newString=string.split(" ");
-  var firstLetter=[];
-  var pigLatin = [];
-  var concat=[];
-
-   
-  for(i=0; i<newString.length; i++){
-  var word = newString[i].split('');
-
-      firstLetter.push(word[0].concat(ay));
-       word.splice(0,1);
-    var combined = word.join();
-    var noComma = combined.replace(/,/g,"");
-    pigLatin.push(noComma)
-    
-     }
-    
-   for (j=0; j<pigLatin.length; j++){
-    concat.push(pigLatin[j]+firstLetter[j]);
-                                                      
-    }
-   return concat;
+function arrayReverse(myArray){
+   var newArray = [];
+  for (i=(myArray.length)-1; i>=0; i--){
+    newArray.push(myArray[i]); 
+  }
+  return newArray;
 }
-console.log(translate(myString))
+console.log(arrayReverse(myArray));
