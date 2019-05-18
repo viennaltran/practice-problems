@@ -7,26 +7,25 @@ var newArray2 = [];
 var newArray3 = [];
 
 function fittingWords (string,array){
-  var letter=string.split("");
-  
-  for(i=0; i<myArray.length; i++){
+    var letter=string.split("");
     
-  
-  if(myArray[i].includes("c")){
-    newArray.push(myArray[i]);
+    for(i=0; i<array.length; i++){
     
-    if(myArray[i].includes("a")){
-      newArray2.push(myArray[i]);
+    if(myArray[i].includes(letter[0])){
+      newArray.push(array[i]);
       
-      if(myArray[i].includes("t")){
-        newArray3.push(myArray[i]);
+      if(myArray[i].includes(letter[1])){
+        newArray2.push(array[i]);
+        
+        if(myArray[i].includes(letter[2])){
+          newArray3.push(array[i]);
+        }
       }
+    }else{
+      console.log(false);
     }
-  }else{
-    console.log(false);
+   }
+      
+    return newArray3
   }
- }
-    
-  return newArray3
-}
-console.log(fittingWords('cat', myArray));
+  console.log(fittingWords('cat', myArray));
