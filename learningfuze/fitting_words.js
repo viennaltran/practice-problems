@@ -1,6 +1,7 @@
 // Build a function that takes in a string and an array of strings. The function should output an 
 // array of strings that contain the same letters as the single input string.
 
+var myString= "cat";
 var myArray = ['cat','caterpillar','whale','accurate','smile','cactus','cute'];
 var newArray = [];
 var newArray2 = [];
@@ -28,4 +29,4 @@ function fittingWords (string,array){
       
     return newArray3
   }
-  console.log(fittingWords('cat', myArray));
+  console.log(fittingWords(myString, myArray));
