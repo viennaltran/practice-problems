@@ -26,3 +26,45 @@ return arrayOfMatchingWords;
 }
 
 fittingWords('cat', myArray);
+
+var wordsArr = [
+  'cat',
+  'catastrophe',
+  'attach',
+  'orange',
+  'maeby',
+  'kitten',
+  'act',
+  'at'
+];
+function containsLetters(str, arr) {
+  var letters = str.split('');
+  console.log(letters);
+
+  // ES6 version
+  /*
+  return wordsArr.filter(word => {
+    for (var i = 0; i < letters.length; i++) {
+      if (word.indexOf(letters[i]) === -1) {
+        // if any given letter is not in the word, get out
+        return false;
+      }
+    }
+    // all letters are in the word
+    return true;
+  });
+  */
+
+  // ES5 version
+  return wordsArr.filter(function(word) {
+    for (var i = 0; i < letters.length; i++) {
+      if (word.indexOf(letters[i]) === -1) {
+        // if any given letter is not in the word, get out
+        return false;
+      }
+    }
+    // all letters are in the word
+    return true;
+  });
+}
+console.log(containsLetters('cat', wordsArr)); // should return cat, catastrophe, attach, act
